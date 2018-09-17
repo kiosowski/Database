@@ -27,7 +27,7 @@ namespace PetClinic.Models
         [Required]
         [Range(1, int.MaxValue)]
         public int Age { get; set; }
-        [ForeignKey("Passport")]
+        [ForeignKey(nameof(Passport))]
         public string PassportSerialNumber { get; set; }
         [Required]
         public Passport Passport { get; set; }

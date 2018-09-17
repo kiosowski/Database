@@ -27,7 +27,7 @@ namespace PetClinic.Models
         [MinLength(3), MaxLength(50)]
         public string Profession { get; set; }
         [Required]
-        [Range(22, 66)]
+        [Range(22, 65)]
         public int Age { get; set; }
         [Required]
         [RegularExpression(@"^(\+359|0)[0-9]{9}$")]
